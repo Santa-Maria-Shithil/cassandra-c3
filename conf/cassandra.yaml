@@ -233,7 +233,7 @@ seed_provider:
       parameters:
           # seeds is actually a comma-delimited list of addresses.
           # Ex: "<ip1>,<ip2>,<ip3>"
-          - seeds: "54.174.254.168, 54.255.199.163" #public ip
+          - seeds: "54.174.254.168, 54.255.199.163, 13.210.71.103" #public ip
           #- seeds: "52.77.219.179"
 
 # For workloads with more data than can fit in memory, Cassandra's
@@ -304,11 +304,11 @@ ssl_storage_port: 7001
 # address associated with the hostname (it might not be).
 #
 # Setting this to 0.0.0.0 is always wrong.
-listen_address: 172.31.45.133 #private ip
+listen_address:  172.31.32.171 #private ip
 
 # Address to broadcast to other Cassandra nodes
 # Leaving this blank will set it to the same value as listen_address
-broadcast_address: 54.255.199.163  #public ip
+broadcast_address: 13.210.71.103 #public ip
 
 # Internode authentication backend, implementing IInternodeAuthenticator;
 # used to allow/disallow connections from peer nodes.
